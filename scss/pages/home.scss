@@ -4,8 +4,8 @@
 
 @use "../components/home-cards";
 @use "../components/home-regular-cards";
-@use "../components/home-gericht-card";
-@use "../components/home-photogallery-card";
+@use "../components/home-Updatess-card";
+@use "../components/home-gallery-card";
 #main {
   padding: 153px 0 237px;
   .main {
@@ -68,7 +68,7 @@
   }
 }
 
-#happy {
+#customers {
   .owl-theme .owl-nav {
     transition: $trs;
     display: none;
@@ -128,7 +128,7 @@
   }
   padding: 100px 0 90px;
   background-color: $happy-bg;
-  .happy {
+  .customers {
     &__content {
       margin-bottom: 60px;
       &-description {

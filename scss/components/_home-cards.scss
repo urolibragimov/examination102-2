@@ -1,7 +1,7 @@
 @use "../abstracts/mixins" as *;
 @use "../abstracts/variables" as *;
 
-#popular {
+#famous {
   .owl-nav {
     display: none;
     @media (min-width: 768px) {
@@ -46,7 +46,7 @@
   }
   @include sectionpadding;
   background-color: $body-color;
-  .popular {
+  .famous {
     &__heading {
       @include headstyletwo;
       padding-bottom: 40px;

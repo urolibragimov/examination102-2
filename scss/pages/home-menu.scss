@@ -1,8 +1,8 @@
 @use "../global.scss";
 @use "../abstracts/variables" as *;
 @use "../abstracts/mixins" as *;
-@use "../components/home-products-card";
-@use "../components/home-photogallery-card";
+@use "../components/home-menu-card";
+@use "../components/home-gallery-card";
 @use "../pages/home.scss";
 
 .gallery-top {
