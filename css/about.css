@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.cdnfonts.com/css/cera-round-pro");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+.photos {
+  margin-bottom: 120px;
+}
+@media (min-width: 768px) {
+  .photos {
+    margin-bottom: 240px !important;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  position: relative;
+  padding-top: 120px;
+}
+
+.footer-top__absolute {
+  display: none;
+  padding: 64px 0;
+  position: absolute;
+  top: -200px;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background: #bb2339;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 22px 30px 95px 1px rgba(86, 86, 86, 0.2);
+  border-radius: 20px;
+}
+@media (min-width: 768px) {
+  .footer-top__absolute {
+    display: block !important;
+  }
+}
+.footer-top__absolute .footer-top__descript {
+  font-family: "Cera Round Pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.475rem;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #ffffff;
+}
+.footer-top__absolute .footer-top__heading {
+  margin: 17px 0 25px;
+  font-family: "Cera Round Pro", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #ffffff;
+}
+.footer-top__absolute .footer-top__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 175%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.footer-top__absolute form {
+  margin-top: 64px;
+}
+.footer-top__absolute form input {
+  width: 45%;
+  padding: 12px 19px;
+  font-family: "Cera Round Pro", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 175%;
+  background-color: transparent;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #aaaaaa;
+  border: 1px solid rgba(245, 239, 219, 0.5);
+  border-radius: 100px;
+}
+.footer-top__absolute form a {
+  padding: 12px 32px;
+  font-family: "Cera Round Pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+}
+.footer-top__absolute form a:hover {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+
+.footer {
+  padding: 40px 0;
+  background-color: #bb2339;
+}
+.footer-top {
+  display: block;
+  padding: 64px 0;
+  background: #bb2339;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 22px 30px 95px 1px rgba(86, 86, 86, 0.2);
+  border-radius: 20px;
+}
+@media (min-width: 768px) {
+  .footer-top {
+    display: none !important;
+  }
+}
+.footer-top__descript {
+  font-family: "Cera Round Pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.475rem;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #ffffff;
+}
+.footer-top__heading {
+  margin: 17px 0 25px;
+  font-family: "Cera Round Pro", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #ffffff;
+}
+.footer-top__text {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 175%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.footer-top form {
+  margin-top: 64px;
+}
+.footer-top form input {
+  width: 45%;
+  padding: 12px 19px;
+  font-family: "Cera Round Pro", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 175%;
+  background-color: transparent;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #aaaaaa;
+  border: 1px solid rgba(245, 239, 219, 0.5);
+  border-radius: 100px;
+}
+.footer-top form a {
+  padding: 12px 32px;
+  font-family: "Cera Round Pro", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 175%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+}
+.footer-top form a:hover {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+.footer-bottom {
+  padding: 100px 0 80px;
+}
+@media (min-width: 768px) {
+  .footer-bottom {
+    padding: 292px 0 80px !important;
+  }
+}
+@media (min-width: 576px) {
+  .footer-bottom {
+    flex-wrap: nowrap !important;
+  }
+}
+.footer-bottom h2 {
+  margin-bottom: 24px;
+  font-family: "Cera Round Pro", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #ffffff;
+}
+.footer-bottom p {
+  margin-bottom: 10px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+.footer-bottom__contact .contact-address {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+}
+.footer-bottom__contact .footer-contact__tel a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 26px;
+  letter-spacing: 0.04em;
+}
+.footer-bottom__logo .logo-text {
+  max-width: 438px;
+  margin: 32px 0 45px;
+}
+.footer-bottom__logo .bottom-logo__icon i {
+  font-size: 24px;
+}
+
+header {
+  background-color: #bb2339 !important;
+}
+
+.container-fluid::after,
+.container::after,
+aside::after,
+footer::after,
+header::after,
+section::after,
+.container-fluid::after,
+.container::after,
+aside::after,
+footer::after,
+header::after,
+section::after {
+  display: none;
+  clear: both;
+  content: "";
+}
+
+.dropdown-toggle::before {
+  display: none;
+}
+
+.navbar-shrink {
+  z-index: 99;
+}
+.navbar-shrink .navbar {
+  padding: 5px 0;
+  transition: 0.5s;
+}
+.navbar-shrink .bg-body-tertiary {
+  box-shadow: 0 3px 3px 0 #d47575;
+}
+
+.bg-body-tertiary {
+  background-color: #bb2339 !important;
+}
+
+.custom-droplink {
+  transition: 0.3s;
+}
+.custom-droplink:hover, .custom-droplink:focus {
+  color: #bb2339;
+}
+
+.custom-navlink {
+  padding: 0 20px !important;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  transition: 0.3s;
+}
+@media (max-width: 992px) {
+  .custom-navlink {
+    padding: 10px 0 !important;
+  }
+}
+.custom-navlink:hover, .custom-navlink:focus {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar-btn {
+  padding: 10px 40px;
+  border: 1px solid #ffffff;
+  border-radius: 100px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 175%;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.offcanvas {
+  visibility: hidden;
+  background-color: #bb2339;
+}
+
+.btn-close {
+  color: #333333;
+}
+.btn-close:focus {
+  box-shadow: 0 0 0 0.25rem rgba(59, 59, 59, 0.2509803922);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.1rem rgba(59, 59, 59, 0.2509803922);
+}
+
+#about {
+  padding-top: 140px;
+}
+#about .about h1 {
+  font-family: "Cera Round Pro", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4rem;
+  line-height: 130%;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  font-feature-settings: "tnum" on, "lnum" on;
+  color: #242424;
+}
+#about .about-content {
+  margin-top: 40px;
+}
+#about .about p {
+  max-width: 720px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 32px;
+  letter-spacing: 0.04em;
+  color: rgba(36, 36, 36, 0.8);
+}

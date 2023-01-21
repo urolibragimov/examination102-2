@@ -1,0 +1,36 @@
+@use "../global.scss";
+
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+@use "../components/home-gericht-card";
+#news {
+  margin-top: 143px;
+  .news {
+    margin-bottom: -60px;
+    .news-active__page {
+      h5 {
+        @include activtext;
+      }
+      .color-white {
+        color: #b0b0b0;
+      }
+      .color-red {
+        color: $primary-color;
+      }
+    }
+    .news-heading {
+      h1 {
+        font-family: "Cera Round Pro", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        text-transform: capitalize;
+        font-feature-settings: "tnum" on, "lnum" on;
+        color: $headingtwo-color;
+      }
+    }
+  }
+}   

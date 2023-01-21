@@ -1,0 +1,25 @@
+@use "../global.scss";
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+#about {
+  padding-top: 140px;
+  .about {
+    h1 {
+      @include headingpages;
+    }
+    &-content {
+      margin-top: 40px;
+    }
+    p {
+      max-width: 720px;
+      font-family: "Open Sans";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 1.25rem;
+      line-height: 32px;
+      letter-spacing: 0.04em;
+      color: rgb(36, 36, 36, 0.8);
+    }
+  }
+}

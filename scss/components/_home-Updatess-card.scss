@@ -1,0 +1,82 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+#Updatess {
+  @include sectionpadding;
+  .Updatess {
+    &__content {
+      margin-bottom: 60px;
+      &-description {
+        @include contentstyle;
+      }
+      &-heading {
+        @include headstyletwo;
+      }
+    }
+    &__cards {
+      padding-bottom: 50px;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 35px 35px;
+      @media (min-width: 450px) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @media (min-width: 768px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      &-card {
+        background: #ffffff;
+        border: 1px solid rgba(36, 36, 36, 0.1);
+        border-radius: 14px;
+        .Updatess__card-content {
+          padding: 20px 20px 30px 20px;
+          .Updatess__card-head {
+            font-family: "Cera Round Pro", sans-serif;
+            font-style: normal;
+            font-weight: $fw-500;
+            font-size: 1.5rem;
+            line-height: 32px;
+            text-transform: capitalize;
+            font-feature-settings: "tnum" on, "lnum" on;
+            color: $headingtwo-color;
+          }
+          .Updatess__card-text {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: $fw-400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #aaaaaa;
+          }
+          a {
+            font-family: "Cera Round Pro", sans-serif;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1rem;
+            line-height: 16px;
+            letter-spacing: 0.04em;
+            color: #bb2339;
+            &:hover {
+              color: rgb(187, 35, 57, 0.5);
+            }
+          }
+          .Updatess__card-more {
+            .more-text {
+              font-family: "Open Sans";
+              font-style: normal;
+              font-weight: $fw-400;
+              font-size: 0.875rem;
+              line-height: 19px;
+              color: rgb(36, 36, 36, 0.5);
+            }
+          }
+        }
+      }
+    }
+    &-btn {
+      a {
+        @include btn;
+      }
+    }
+  }
+}

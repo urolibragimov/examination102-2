@@ -1,0 +1,167 @@
+@use "../global.scss";
+
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+#contact {
+  padding-top: 116px;
+  .contact {
+    &-active__page {
+      h5 {
+        @include activtext;
+      }
+      .color-white {
+        color: #b0b0b0;
+      }
+      .color-red {
+        color: $primary-color;
+      }
+    }
+    .contact-heading {
+      h1 {
+        font-family: "Cera Round Pro", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 4rem;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        text-transform: capitalize;
+        font-feature-settings: "tnum" on, "lnum" on;
+        color: $headingtwo-color;
+      }
+    }
+    .contact-contacts {
+      padding-top: 40px;
+      display: grid;
+      grid-template-columns: 0.7fr 1.3fr;
+      grid-gap: 50px 50px;
+      @media (max-width: 992px) {
+        grid-template-columns: 1fr;
+      }
+      .contacts-left {
+        &__numbers {
+          display: grid;
+          row-gap: 15px;
+          .numbers-card {
+            padding: 25px 20px;
+            background: #ffffff;
+            border: 1px solid rgba(36, 36, 36, 0.1);
+            border-radius: 14px;
+            h4 {
+              font-family: "Open Sans";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 1.375rem;
+              line-height: 34px;
+              color: $headingtwo-color;
+            }
+            a {
+              font-family: "Open Sans";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 19px;
+              color: rgb(36, 36, 36, 0.7);
+            }
+            .numbers-card__icon {
+              padding: 18px;
+              border-radius: 50%;
+              background: rgba(36, 36, 36, 0.05);
+            }
+          }
+        }
+      }
+      .contacts-right {
+        padding: 40px 40px 50px 40px;
+        background: #ffffff;
+        border: 1px solid rgba(36, 36, 36, 0.1);
+        border-radius: 14px;
+        &__content {
+          margin-bottom: 40px;
+          .right-content__heading {
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 2.375rem;
+            line-height: 34px;
+            color: $headingtwo-color;
+          }
+          .right-content__text {
+            max-width: 565px;
+            font-family: "Open Sans";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: rgb(36, 36, 36, 0.7);
+          }
+        }
+        .inputs-row {
+          @media (max-width: 550px) {
+            flex-direction: column;
+            row-gap: 25px;
+            .inputs-email,
+            .inputs-number {
+              width: 100%;
+            }
+          }
+        }
+        .inputs-email,
+        .inputs-number {
+          @media (max-width: 550px) {
+            width: 100% !important;
+          }
+        }
+
+        textarea {
+          padding: 20px 20px 100px 20px !important;
+          margin-bottom: 43px;
+          resize: none;
+          &:focus {
+            outline: none;
+          }
+        }
+        input,
+        textarea {
+          padding: 20px;
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 22px;
+          display: flex;
+          align-items: center;
+          background: #ffffff;
+          border: 1px solid rgba(51, 34, 68, 0.1);
+          border-radius: 12px;
+          color: rgb(51, 51, 51, 0.7);
+        }
+        a {
+          padding: 18px 45px;
+          font-family: "Open Sans";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 1.125rem;
+          line-height: 25px;
+          color: #ffffff;
+          background: $primary-color;
+          border-radius: 39px;
+        }
+      }
+    }
+    .cotact-map {
+      margin-top: 110px;
+      .map-heading {
+        font-family: "Cera Round Pro", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 2.375rem;
+        line-height: 130%;
+        letter-spacing: 0.03em;
+        text-transform: capitalize;
+        font-feature-settings: "tnum" on, "lnum" on;
+        color: #000000;
+      }
+    }
+  }
+}

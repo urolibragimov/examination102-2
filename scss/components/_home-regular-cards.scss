@@ -1,0 +1,119 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+#regular {
+  .tabs-expand:not(.vertical):not(.bottom) ul.tabs-pills > li.active {
+    font-weight: 500;
+    border-radius: 100px;
+    background: $primary-color;
+    a {
+      color: #FFFFFF;
+    }
+  }
+  .tabs-expand:not(.vertical):not(.bottom) ul.tabs-pills > li .tabs {
+    border: 1px solid $primary-color;
+    background-color: $regular-bodybg;
+    color: $headingtwo-color;
+  }
+  .tabs-expand:not(.vertical):not(.bottom) ul.tabs-pills > li {
+    transition: $trs;
+    background: #ffffff;
+    border: 1px solid #bb2339;
+    border-radius: 100px;
+    &:hover {
+      background: $primary-color;
+    }
+  }
+  .tabs {
+    background-color: transparent;
+  }
+  .tabs > ul.tabs-list > li > a {
+    white-space: nowrap;
+    gap: 10px;
+    padding: 10px 30px;
+    color: $headingtwo-color;
+  }
+  .tabs-expand > ul.tabs-list {
+    gap: 10px;
+    display: grid !important;
+    grid-template-columns: 1fr;
+  }
+  @include sectionpadding;
+  .regular {
+    &__heading {
+      @include headstyletwo;
+      padding-bottom: 60px;
+    }
+  }
+  .regular__cards {
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px 20px;
+    &-card {
+      padding: 20px 20px 40px 20px;
+      background: #ffffff;
+      border: 1px solid rgba(36, 36, 36, 0.1);
+      border-radius: 14px;
+      .regular__card-heading {
+        @include hstlyle;
+      }
+      .regular__card-img {
+        width: 100%;
+      }
+      .regular__card-price {
+        @include stylecardsprice;
+      }
+    }
+  }
+}
+
+.border {
+  border: none !important;
+}
+
+@media (min-width: 300px) {
+  #regular {
+    .regular__cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .tabs-expand > ul.tabs-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (min-width: 450px) {
+  #regular {
+    .regular__cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  #regular {
+    .regular__cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .tabs-expand > ul.tabs-list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #regular {
+    .regular__cards {
+      grid-template-columns: repeat(4, 1fr) !important;
+    }
+  }
+}
+
+@media (min-width: 1250px) {
+  #regular {
+    .tabs-expand > ul.tabs-list {
+      grid-template-columns: repeat(8, 1fr);
+    }
+  }
+}

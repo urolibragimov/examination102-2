@@ -1,0 +1,73 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+#popular {
+  .owl-nav {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+
+  .owl-theme .owl-nav {
+    position: absolute;
+    top: -65px;
+    right: 0;
+  }
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-prev {
+    padding: 0px 15px !important;
+    background: 0 0;
+    color: $headingtwo-color;
+    border: 1px solid $primary-color;
+    border-radius: 6px;
+    font-size: 1.5625rem;
+    transition: $trs;
+  }
+
+  .owl-theme .owl-nav [class*="owl-"]:hover {
+    background: $primary-color;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .owl-theme .owl-dots .owl-dot span {
+    background: $text-color;
+    transition: $trs;
+  }
+
+  .owl-theme .owl-dots {
+    margin-top: 20px;
+  }
+
+  .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background-color: $primary-color;
+  }
+  @include sectionpadding;
+  background-color: $body-color;
+  .popular {
+    &__heading {
+      @include headstyletwo;
+      padding-bottom: 40px;
+    }
+    &__card {
+      padding: 20px 20px 40px 20px;
+      background-color: #ffffff;
+      background: #ffffff;
+      border-radius: 14px;
+      &-heading {
+        @include hstlyle;
+      }
+      &-stars {
+        img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      &-price {
+        @include stylecardsprice;
+      }
+    }
+  }
+}

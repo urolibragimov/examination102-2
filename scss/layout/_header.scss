@@ -1,0 +1,91 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+header {
+  background-color: $primary-color !important;
+}
+
+.container-fluid::after,
+.container::after,
+aside::after,
+footer::after,
+header::after,
+section::after,
+.container-fluid::after,
+.container::after,
+aside::after,
+footer::after,
+header::after,
+section::after {
+  display: none;
+  clear: both;
+  content: "";
+}
+
+.dropdown-toggle::before {
+  display: none;
+}
+
+.navbar-shrink {
+  z-index: 99;
+  .navbar {
+    padding: 5px 0;
+    transition: 0.5s;
+  }
+  .bg-body-tertiary {
+    box-shadow: 0 3px 3px 0 rgba($color: #d47575, $alpha: 1);
+  }
+}
+
+.bg-body-tertiary {
+  background-color: $primary-color !important;
+}
+
+.custom-droplink {
+  transition: $trs;
+  &:hover,
+  &:focus {
+    color: $primary-color;
+  }
+}
+
+.custom-navlink {
+  padding: 0 20px !important;
+  @media (max-width: 992px) {
+    padding: 10px 0 !important;
+  }
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: $fw-400;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  transition: $trs;
+  &:hover,
+  &:focus {
+    color: $nav-hover;
+  }
+}
+
+.navbar-btn {
+  @include navbarbtn;
+}
+
+.offcanvas {
+  visibility: hidden;
+  background-color: $primary-color;
+}
+
+.btn-close {
+  color: $heading-color;
+  &:focus {
+    box-shadow: 0 0 0 0.25rem #3b3b3b40;
+  }
+}
+
+.navbar-toggler {
+  &:focus {
+    box-shadow: 0 0 0 0.1rem #3b3b3b40;
+  }
+}
